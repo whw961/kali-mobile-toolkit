@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Mobile</title>
+    <style>
+        body { background: #0d0d0d; color: #00ff41; font-family: 'Courier New', monospace; padding: 20px; text-align: center; }
+        h1 { border-bottom: 1px solid #00ff41; padding-bottom: 10px; letter-spacing: 2px; }
+        .card { border: 1px solid #00ff41; padding: 20px; margin-top: 20px; background: #111; border-radius: 8px; box-shadow: 0 0 10px rgba(0,255,65,0.2); }
+        button { background: #00ff41; color: #000; border: none; padding: 12px 24px; font-size: 16px; font-weight: bold; cursor: pointer; border-radius: 4px; margin-top: 15px; }
+        button:active { background: #00cc33; }
+        #log { text-align: left; font-size: 14px; margin-top: 15px; color: #888; word-wrap: break-word; }
+    </style>
+</head>
+<body>
+    <h1>[+] KALI MOBILE</h1>
+    <p>Rootless QEMU Virtual Environment</p>
+    
+    <div class="card">
+        <h3>Core Status</h3>
+        <p id="status">Not Initialized</p>
+        <button onclick="initSystem()">Initialize Environment</button>
+    </div>
+
+    <div class="card">
+        <h3>Console Output</h3>
+        <pre id="log">Ready...</pre>
+    </div>
+
+    <script>
+        function initSystem() {
+            document.getElementById('status').innerText = 'Downloading Kernel & Rootfs...';
+            document.getElementById('log').innerText = '[*] Checking local files...\n[*] Starting download (mocked for now).\n[!] Real download logic goes here later.';
+        }
+    </script>
+</body>
+</html>
