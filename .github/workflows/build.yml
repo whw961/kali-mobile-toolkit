@@ -12,7 +12,9 @@ jobs:
           java-version: 17
       - uses: android-actions/setup-android@v3
       - name: Build
-        run: gradle assembleDebug
+        run: |
+          gradle wrapper --gradle-version 8.2.2
+          ./gradlew assembleDebug
       - uses: actions/upload-artifact@v4
         with:
           name: Kali-Mobile-APK
