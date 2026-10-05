@@ -1,0 +1,6 @@
+{
+  "appId": "com.whw961.kali",
+  "appName": "KaliMobile",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
